@@ -8,7 +8,7 @@ Aplicação desktop desenvolvida com Electron para consumo de sistemas web da TO
 
 ### Integração com TOTVS WebAgent
 
-Realiza tentativa automática de comunicação com o TOTVS WebAgent via `localhost` na porta `21021`, permitindo execução e integração com recursos locais da máquina.
+Realiza tentativa automática de comunicação com o TOTVS WebAgent, permitindo execução e integração com recursos locais da máquina.
 
 ### Configuração Dinâmica de Ambientes
 
@@ -27,13 +27,33 @@ Permite a alteração de rotas e endereços através do arquivo `acesso.json`, s
 
 Adapta dinamicamente o nível de zoom da interface conforme a resolução da tela, preservando o layout da aplicação e melhorando a experiência do usuário.
 
+### Personalização com Logo da Empresa
+
+A aplicação permite carregar automaticamente o logotipo da empresa.
+
+Para utilizar essa funcionalidade, basta adicionar um arquivo chamado:
+
+```
+logo
+```
+
+Com uma das seguintes extensões suportadas:
+
+- `.png`
+- `.jpeg`
+- `.jpg`
+- `.webp`
+
+O arquivo deve estar localizado na raiz da aplicação (mesma pasta do executável no build final).  
+Ao iniciar, o sistema identificará automaticamente o arquivo e aplicará o logo na interface.
+
 ---
 
 ## Pré-requisitos
 
 - Node.js (versão 14 ou superior recomendada)
 - TOTVS WebAgent instalado na máquina
-- Permissões para comunicação via `localhost:21021`
+- Comunicação ativa via porta configurada no servidor
 
 ---
 
@@ -62,11 +82,7 @@ Para executar a aplicação sem gerar o instalador:
 npm start
 ```
 
-A aplicação tentará se comunicar com o WebAgent instalado localmente, geralmente localizado em:
-
-```
-C:\Users\{UsuarioAtual}\AppData\Local\Programs\web-agent\web-agent.exe
-```
+A aplicação tentará se comunicar com o WebAgent instalado localmente.
 
 ---
 

@@ -10,7 +10,7 @@ let mainWindow = null
 const WEB_AGENT_PORT = 0 //
 
 // URL da aplicação
-let APP_URL = ''
+let APP_URL = null
 
 // Variável para controlar o processo de fechamento
 let isClosing = false
