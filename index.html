@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ Neblina | Totvs Protheus</title>
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100vh; background-color: #fff;">
+        <div class="card border border-1 rounded-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+            style="width: 18rem; background-color: #fff;">
+            <div class="card-body">
+                <img src="./logo-footer.webp" alt="logo" class="img-fluid">
+                <h6 class="card-subtitle mb-2 text-body-secondary text-center pt-4">Totvs Protheus</h6>
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <select class="form-select" aria-label="Selecione o ambiente" id="ambientes">
+                            <option value="" disabled selected>Carregando ambientes...</option>
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2 pt-3">
+                        <button class="btn btn-primary" type="button" id="btnEntrar" onclick="getEnv()">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

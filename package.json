@@ -1,0 +1,52 @@
+{
+  "name": "totvs-web-app",
+  "version": "1.0.0",
+  "description": "Aplicativo TOTVS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^39.2.5",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.totvs.webapp",
+    "productName": "TOTVS WebApp",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist/**/*",
+      "!**/*.log",
+      "!**/*.md"
+    ],
+    "extraFiles": [
+      "acesso.json"
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "TOTVS WebApp"
+    },
+    "portable": {
+      "artifactName": "TOTVS_WebApp_Portable.exe"
+    }
+  }
+}
