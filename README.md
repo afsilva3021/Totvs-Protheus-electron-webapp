@@ -1,6 +1,8 @@
 # TOTVS Web App
 
-Aplicação desktop desenvolvida com Electron para consumo de sistemas web da TOTVS, proporcionando maior controle operacional, portabilidade e otimizações de desempenho em ambientes corporativos.
+O **TOTVS Web App** é uma aplicação desktop independente e customizada, desenvolvida com [Electron](https://www.electronjs.org/), projetada especificamente para atuar como um cliente otimizado para o acesso aos sistemas web da TOTVS (como o Protheus Web).
+
+O principal objetivo deste projeto é fornecer aos usuários finais um ambiente isolado, estável e de alta performance, desvinculando o uso do sistema corporativo dos navegadores de internet convencionais (Chrome, Edge, etc). Com isso, a aplicação garante maior controle operacional, previne problemas de incompatibilidade de cache (como erros de GPU), facilita a integração nativa com recursos do sistema operacional (ex: TOTVS WebAgent), e oferece grande flexibilidade ao permitir a configuração dinâmica de múltiplos perfis e ambientes de acesso.
 
 ---
 
